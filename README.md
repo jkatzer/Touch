@@ -80,7 +80,7 @@ If you are new to using Cocoapods, you'll want to commit your Podfile to your pr
   - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
       ...
       
-      [Touch setBackend:@"Keen" withId:@"YOURPROJECTID" andToken:@"YOURWRITEKEY"];
+      [Touch setupBackend:@"Keen" withId:@"YOURPROJECTID" andToken:@"YOURWRITEKEY"];
       [Touch start];
 	   ...
 

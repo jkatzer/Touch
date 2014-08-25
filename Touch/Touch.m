@@ -20,4 +20,14 @@
   return _shared;
 }
 
++(void)setupBackend:(NSString*)backendName withId:(NSString*)backendId andToken:(NSString*)backendToken{
+
+}
+
++(void)start{
+
+}
+
+
+
 @end
