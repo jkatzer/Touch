@@ -14,7 +14,7 @@
 +(Touch *)touchManager;
 
 //setting up a backend
-+(void)setupBackend:(NSString*)backendName withId:(NSString*)backendId andToken:(NSString*)backendToken;
++(void)setupBackend:(NSString*)backend withId:(NSString*)backendId andToken:(NSString*)backendToken;
 
 //starting and stopping
 +(void)start;
@@ -25,5 +25,12 @@
 +(void)setVerbose:(BOOL)isVerbose;
 +(void)addEvent:(NSDictionary*)event;
 +(void)addEvent:(NSDictionary*)event toCollection:(NSString*)collection error:(NSError*)error;
+
+//super-advanced features
++(id)analyticsManagerForBackend:(NSString*)backend;
+
+
+//private-ish methods
+
 
 @end

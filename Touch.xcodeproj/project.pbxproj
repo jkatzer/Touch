@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9695D8B819AC1C21005E62FC /* TMBackendHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9695D8B619AC1C21005E62FC /* TMBackendHelper.h */; };
+		9695D8B919AC1C21005E62FC /* TMBackendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695D8B719AC1C21005E62FC /* TMBackendHelper.m */; };
+		9695D8BC19AC1C9A005E62FC /* TMKeenBackendHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */; };
+		9695D8BD19AC1C9A005E62FC /* TMKeenBackendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695D8BB19AC1C9A005E62FC /* TMKeenBackendHelper.m */; };
 		96FE2DFB19ABEB6B0017982B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FE2DFA19ABEB6B0017982B /* Foundation.framework */; };
 		96FE2DFE19ABEB6B0017982B /* Touch-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 96FE2DFD19ABEB6B0017982B /* Touch-Prefix.pch */; };
 		96FE2E0019ABEB6B0017982B /* Touch.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FE2DFF19ABEB6B0017982B /* Touch.h */; };
@@ -14,10 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9695D8A219ABF23C005E62FC /* Touch-iOS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Touch-iOS-Prefix.pch"; sourceTree = "<group>"; };
-		9695D8A419ABF23C005E62FC /* Touch_iOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Touch_iOS.h; sourceTree = "<group>"; };
-		9695D8A619ABF23C005E62FC /* Touch_iOS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Touch_iOS.m; sourceTree = "<group>"; };
-		9695D8AF19ABF23C005E62FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9695D8B619AC1C21005E62FC /* TMBackendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBackendHelper.h; sourceTree = "<group>"; };
+		9695D8B719AC1C21005E62FC /* TMBackendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBackendHelper.m; sourceTree = "<group>"; };
+		9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMKeenBackendHelper.h; sourceTree = "<group>"; };
+		9695D8BB19AC1C9A005E62FC /* TMKeenBackendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMKeenBackendHelper.m; sourceTree = "<group>"; };
 		96FE2DF719ABEB6B0017982B /* libTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		96FE2DFA19ABEB6B0017982B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
 		96FE2DFD19ABEB6B0017982B /* Touch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Touch-Prefix.pch"; sourceTree = "<group>"; };
@@ -46,39 +50,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		9695D8A119ABF23C005E62FC /* Touch-iOS */ = {
-			isa = PBXGroup;
-			children = (
-				9695D8A219ABF23C005E62FC /* Touch-iOS-Prefix.pch */,
-				9695D8A419ABF23C005E62FC /* Touch_iOS.h */,
-				9695D8A619ABF23C005E62FC /* Touch_iOS.m */,
-			);
-			path = "Touch-iOS";
-			sourceTree = "<group>";
-		};
-		9695D8AD19ABF23C005E62FC /* Touch-iOSTests */ = {
-			isa = PBXGroup;
-			children = (
-				9695D8AE19ABF23C005E62FC /* Supporting Files */,
-			);
-			path = "Touch-iOSTests";
-			sourceTree = "<group>";
-		};
-		9695D8AE19ABF23C005E62FC /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9695D8AF19ABF23C005E62FC /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 		96FE2DEC19ABEB6B0017982B = {
 			isa = PBXGroup;
 			children = (
 				96FE2DFC19ABEB6B0017982B /* Touch */,
 				96FE2E0819ABEB6B0017982B /* TouchTests */,
-				9695D8A119ABF23C005E62FC /* Touch-iOS */,
-				9695D8AD19ABF23C005E62FC /* Touch-iOSTests */,
 				96FE2DF919ABEB6B0017982B /* Frameworks */,
 				96FE2DF819ABEB6B0017982B /* Products */,
 			);
@@ -107,6 +83,10 @@
 				96FE2DFD19ABEB6B0017982B /* Touch-Prefix.pch */,
 				96FE2DFF19ABEB6B0017982B /* Touch.h */,
 				96FE2E0119ABEB6B0017982B /* Touch.m */,
+				9695D8B619AC1C21005E62FC /* TMBackendHelper.h */,
+				9695D8B719AC1C21005E62FC /* TMBackendHelper.m */,
+				9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */,
+				9695D8BB19AC1C9A005E62FC /* TMKeenBackendHelper.m */,
 			);
 			path = Touch;
 			sourceTree = "<group>";
@@ -134,8 +114,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9695D8B819AC1C21005E62FC /* TMBackendHelper.h in Headers */,
 				96FE2E0019ABEB6B0017982B /* Touch.h in Headers */,
 				96FE2DFE19ABEB6B0017982B /* Touch-Prefix.pch in Headers */,
+				9695D8BC19AC1C9A005E62FC /* TMKeenBackendHelper.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,7 +241,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9695D8BD19AC1C9A005E62FC /* TMKeenBackendHelper.m in Sources */,
 				96FE2E0219ABEB6B0017982B /* Touch.m in Sources */,
+				9695D8B919AC1C21005E62FC /* TMBackendHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
