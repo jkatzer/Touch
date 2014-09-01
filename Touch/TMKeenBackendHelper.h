@@ -10,4 +10,8 @@
 
 @interface TMKeenBackendHelper : TMBackendHelper
 
+@property (nonatomic,retain) NSString* readKey;
+@property (nonatomic,retain) NSString* defaultCollection;
+
+
 @end

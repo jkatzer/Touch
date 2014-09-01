@@ -1,425 +1,1007 @@
-// !$*UTF8*$!
-{
-	archiveVersion = 1;
-	classes = {
-	};
-	objectVersion = 46;
-	objects = {
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>archiveVersion</key>
+	<string>1</string>
+	<key>classes</key>
+	<dict/>
+	<key>objectVersion</key>
+	<string>46</string>
+	<key>objects</key>
+	<dict>
+		<key>20AA9AB127D44F048F09D8DE</key>
+		<dict>
+			<key>includeInIndex</key>
+			<string>1</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.xcconfig</string>
+			<key>name</key>
+			<string>Pods.xcconfig</string>
+			<key>path</key>
+			<string>Pods/Pods.xcconfig</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>3585FF7B25B14419868B49C7</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Copy Pods Resources</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>"${SRCROOT}/Pods/Pods-resources.sh"
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>3BE5FEB8D826438F81314406</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>name</key>
+			<string>Check Pods Manifest.lock</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
+if [[ $? != 0 ]] ; then
+    cat &lt;&lt; EOM
+error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
+EOM
+    exit 1
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>558A99771F674A4A8C740822</key>
+		<dict>
+			<key>fileRef</key>
+			<string>8ED805D778FF4C4BA309A0A7</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>8ED805D778FF4C4BA309A0A7</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libPods.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>9695D8B619AC1C21005E62FC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TMBackendHelper.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9695D8B719AC1C21005E62FC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TMBackendHelper.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9695D8B819AC1C21005E62FC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9695D8B619AC1C21005E62FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9695D8B919AC1C21005E62FC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9695D8B719AC1C21005E62FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9695D8BA19AC1C9A005E62FC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>TMKeenBackendHelper.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9695D8BB19AC1C9A005E62FC</key>
+		<dict>
+			<key>fileEncoding</key>
+			<string>4</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>TMKeenBackendHelper.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9695D8BC19AC1C9A005E62FC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9695D8BA19AC1C9A005E62FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>9695D8BD19AC1C9A005E62FC</key>
+		<dict>
+			<key>fileRef</key>
+			<string>9695D8BB19AC1C9A005E62FC</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>96FE2DEC19ABEB6B0017982B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>96FE2DFC19ABEB6B0017982B</string>
+				<string>96FE2E0819ABEB6B0017982B</string>
+				<string>96FE2DF919ABEB6B0017982B</string>
+				<string>96FE2DF819ABEB6B0017982B</string>
+				<string>20AA9AB127D44F048F09D8DE</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2DED19ABEB6B0017982B</key>
+		<dict>
+			<key>attributes</key>
+			<dict>
+				<key>LastUpgradeCheck</key>
+				<string>0600</string>
+				<key>ORGANIZATIONNAME</key>
+				<string>Versa.io</string>
+				<key>TargetAttributes</key>
+				<dict>
+					<key>96FE2DF619ABEB6B0017982B</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.0</string>
+					</dict>
+					<key>96FE2E0619ABEB6B0017982B</key>
+					<dict>
+						<key>CreatedOnToolsVersion</key>
+						<string>6.0</string>
+					</dict>
+				</dict>
+			</dict>
+			<key>buildConfigurationList</key>
+			<string>96FE2DF019ABEB6B0017982B</string>
+			<key>compatibilityVersion</key>
+			<string>Xcode 3.2</string>
+			<key>developmentRegion</key>
+			<string>English</string>
+			<key>hasScannedForEncodings</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXProject</string>
+			<key>knownRegions</key>
+			<array>
+				<string>en</string>
+			</array>
+			<key>mainGroup</key>
+			<string>96FE2DEC19ABEB6B0017982B</string>
+			<key>productRefGroup</key>
+			<string>96FE2DF819ABEB6B0017982B</string>
+			<key>projectDirPath</key>
+			<string></string>
+			<key>projectReferences</key>
+			<array/>
+			<key>projectRoot</key>
+			<string></string>
+			<key>targets</key>
+			<array>
+				<string>96FE2DF619ABEB6B0017982B</string>
+				<string>96FE2E0619ABEB6B0017982B</string>
+			</array>
+		</dict>
+		<key>96FE2DF019ABEB6B0017982B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>96FE2E0B19ABEB6C0017982B</string>
+				<string>96FE2E0C19ABEB6C0017982B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>96FE2DF119ABEB6B0017982B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>set -e
 
-/* Begin PBXBuildFile section */
-		9695D8B819AC1C21005E62FC /* TMBackendHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9695D8B619AC1C21005E62FC /* TMBackendHelper.h */; };
-		9695D8B919AC1C21005E62FC /* TMBackendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695D8B719AC1C21005E62FC /* TMBackendHelper.m */; };
-		9695D8BC19AC1C9A005E62FC /* TMKeenBackendHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */; };
-		9695D8BD19AC1C9A005E62FC /* TMKeenBackendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695D8BB19AC1C9A005E62FC /* TMKeenBackendHelper.m */; };
-		96FE2DFB19ABEB6B0017982B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FE2DFA19ABEB6B0017982B /* Foundation.framework */; };
-		96FE2DFE19ABEB6B0017982B /* Touch-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 96FE2DFD19ABEB6B0017982B /* Touch-Prefix.pch */; };
-		96FE2E0019ABEB6B0017982B /* Touch.h in Headers */ = {isa = PBXBuildFile; fileRef = 96FE2DFF19ABEB6B0017982B /* Touch.h */; };
-		96FE2E0219ABEB6B0017982B /* Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FE2E0119ABEB6B0017982B /* Touch.m */; };
-/* End PBXBuildFile section */
+if [ "$CALLED_FROM_MASTER" ]
+then
+# This is the other build, called from the original instance
+exit 0
+fi
 
-/* Begin PBXFileReference section */
-		9695D8B619AC1C21005E62FC /* TMBackendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBackendHelper.h; sourceTree = "<group>"; };
-		9695D8B719AC1C21005E62FC /* TMBackendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBackendHelper.m; sourceTree = "<group>"; };
-		9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMKeenBackendHelper.h; sourceTree = "<group>"; };
-		9695D8BB19AC1C9A005E62FC /* TMKeenBackendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMKeenBackendHelper.m; sourceTree = "<group>"; };
-		96FE2DF719ABEB6B0017982B /* libTouch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTouch.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		96FE2DFA19ABEB6B0017982B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		96FE2DFD19ABEB6B0017982B /* Touch-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Touch-Prefix.pch"; sourceTree = "<group>"; };
-		96FE2DFF19ABEB6B0017982B /* Touch.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
-		96FE2E0119ABEB6B0017982B /* Touch.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Touch.m; sourceTree = "<group>"; };
-		96FE2E0719ABEB6B0017982B /* TouchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		96FE2E0A19ABEB6B0017982B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-/* End PBXFileReference section */
+# Clean up prior to build
 
-/* Begin PBXFrameworksBuildPhase section */
-		96FE2DF319ABEB6B0017982B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				96FE2DFB19ABEB6B0017982B /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96FE2E0419ABEB6B0017982B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXFrameworksBuildPhase section */
+CURRENTCONFIG_DEVICE_DIR="${SYMROOT}/${CONFIGURATION}-iphoneos"
+CURRENTCONFIG_SIMULATOR_DIR="${SYMROOT}/${CONFIGURATION}-iphonesimulator"
+CURRENTCONFIG_UNIVERSAL_DIR="${SYMROOT}/${CONFIGURATION}-universal"
 
-/* Begin PBXGroup section */
-		96FE2DEC19ABEB6B0017982B = {
-			isa = PBXGroup;
-			children = (
-				96FE2DFC19ABEB6B0017982B /* Touch */,
-				96FE2E0819ABEB6B0017982B /* TouchTests */,
-				96FE2DF919ABEB6B0017982B /* Frameworks */,
-				96FE2DF819ABEB6B0017982B /* Products */,
-			);
-			sourceTree = "<group>";
-		};
-		96FE2DF819ABEB6B0017982B /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				96FE2DF719ABEB6B0017982B /* libTouch.a */,
-				96FE2E0719ABEB6B0017982B /* TouchTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		96FE2DF919ABEB6B0017982B /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				96FE2DFA19ABEB6B0017982B /* Foundation.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		96FE2DFC19ABEB6B0017982B /* Touch */ = {
-			isa = PBXGroup;
-			children = (
-				96FE2DFD19ABEB6B0017982B /* Touch-Prefix.pch */,
-				96FE2DFF19ABEB6B0017982B /* Touch.h */,
-				96FE2E0119ABEB6B0017982B /* Touch.m */,
-				9695D8B619AC1C21005E62FC /* TMBackendHelper.h */,
-				9695D8B719AC1C21005E62FC /* TMBackendHelper.m */,
-				9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */,
-				9695D8BB19AC1C9A005E62FC /* TMKeenBackendHelper.m */,
-			);
-			path = Touch;
-			sourceTree = "<group>";
-		};
-		96FE2E0819ABEB6B0017982B /* TouchTests */ = {
-			isa = PBXGroup;
-			children = (
-				96FE2E0919ABEB6B0017982B /* Supporting Files */,
-			);
-			path = TouchTests;
-			sourceTree = "<group>";
-		};
-		96FE2E0919ABEB6B0017982B /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				96FE2E0A19ABEB6B0017982B /* Info.plist */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-/* End PBXGroup section */
+if [ ! -f "${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}" ]; then
+  echo "Device build cleaned; cleaning other builds too"
+  rm -f "${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}" 
+  rm -f "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}"
+elif [ ! -f "${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}" ]; then
+  echo "Simulator build cleaned; cleaning other builds too"
+  rm -f "${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}"
+  rm -f "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}"
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>96FE2DF219ABEB6B0017982B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9695D8BD19AC1C9A005E62FC</string>
+				<string>96FE2E0219ABEB6B0017982B</string>
+				<string>9695D8B919AC1C21005E62FC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>96FE2DF319ABEB6B0017982B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>96FE2DFB19ABEB6B0017982B</string>
+				<string>558A99771F674A4A8C740822</string>
+			</array>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>96FE2DF419ABEB6B0017982B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array>
+				<string>9695D8B819AC1C21005E62FC</string>
+				<string>96FE2E0019ABEB6B0017982B</string>
+				<string>96FE2DFE19ABEB6B0017982B</string>
+				<string>9695D8BC19AC1C9A005E62FC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXHeadersBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>96FE2DF519ABEB6B0017982B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>inputPaths</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXShellScriptBuildPhase</string>
+			<key>outputPaths</key>
+			<array/>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+			<key>shellPath</key>
+			<string>/bin/sh</string>
+			<key>shellScript</key>
+			<string>set -e
 
-/* Begin PBXHeadersBuildPhase section */
-		96FE2DF419ABEB6B0017982B /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9695D8B819AC1C21005E62FC /* TMBackendHelper.h in Headers */,
-				96FE2E0019ABEB6B0017982B /* Touch.h in Headers */,
-				96FE2DFE19ABEB6B0017982B /* Touch-Prefix.pch in Headers */,
-				9695D8BC19AC1C9A005E62FC /* TMKeenBackendHelper.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXHeadersBuildPhase section */
+#
+# Universal static library script
+# http://github.com/michaeltyson/iOS-Universal-Library-Template
+#
+# Version 2.5
+#
+# Purpose:
+#   Create a static library for iPhone from within XCode
+#
+# Author: Adam Martin - http://twitter.com/redglassesapps
+# Tweaked and made into an Xcode template by Michael Tyson - http://atastypixel.com/blog
+# Based on original script from Eonil
+# More info: see this Stack Overflow question: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4
+# Additional changes by John Lawson &lt;http://jelawson.com&gt; to copy the CURRENTCONFIG_DEVICE_DIR to the CURRENTCONFIG_UNIVERSAL_DIR instead of creating it
+# to include other files that might have been copied via Copy Files build phases (e.g. readme files, xibs, etc); this removes the need to copy just
+# the header folder.
+#
+#################[ Tests: helps workaround any future bugs in Xcode ]########
+#
+DEBUG_THIS_SCRIPT="true"
 
-/* Begin PBXNativeTarget section */
-		96FE2DF619ABEB6B0017982B /* Touch */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 96FE2E0D19ABEB6C0017982B /* Build configuration list for PBXNativeTarget "Touch" */;
-			buildPhases = (
-				96FE2DF119ABEB6B0017982B /* ShellScript */,
-				96FE2DF219ABEB6B0017982B /* Sources */,
-				96FE2DF319ABEB6B0017982B /* Frameworks */,
-				96FE2DF419ABEB6B0017982B /* Headers */,
-				96FE2DF519ABEB6B0017982B /* ShellScript */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = Touch;
-			productName = Touch;
-			productReference = 96FE2DF719ABEB6B0017982B /* libTouch.a */;
-			productType = "com.apple.product-type.library.static";
-		};
-		96FE2E0619ABEB6B0017982B /* TouchTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 96FE2E1019ABEB6C0017982B /* Build configuration list for PBXNativeTarget "TouchTests" */;
-			buildPhases = (
-				96FE2E0319ABEB6B0017982B /* Sources */,
-				96FE2E0419ABEB6B0017982B /* Frameworks */,
-				96FE2E0519ABEB6B0017982B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = TouchTests;
-			productName = TouchTests;
-			productReference = 96FE2E0719ABEB6B0017982B /* TouchTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-/* End PBXNativeTarget section */
+if [ $DEBUG_THIS_SCRIPT = "true" ]
+then
+echo "########### TESTS #############"
+echo "Use the following variables when debugging this script; note that they may change on recursions"
+echo "BUILD_DIR = $BUILD_DIR"
+echo "BUILD_ROOT = $BUILD_ROOT"
+echo "CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR"
+echo "BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR"
+echo "CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR"
+echo "TARGET_BUILD_DIR = $TARGET_BUILD_DIR"
+fi
 
-/* Begin PBXProject section */
-		96FE2DED19ABEB6B0017982B /* Project object */ = {
-			isa = PBXProject;
-			attributes = {
-				LastUpgradeCheck = 0600;
-				ORGANIZATIONNAME = Versa.io;
-				TargetAttributes = {
-					96FE2DF619ABEB6B0017982B = {
-						CreatedOnToolsVersion = 6.0;
-					};
-					96FE2E0619ABEB6B0017982B = {
-						CreatedOnToolsVersion = 6.0;
-					};
-				};
-			};
-			buildConfigurationList = 96FE2DF019ABEB6B0017982B /* Build configuration list for PBXProject "Touch" */;
-			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
-			hasScannedForEncodings = 0;
-			knownRegions = (
-				en,
-			);
-			mainGroup = 96FE2DEC19ABEB6B0017982B;
-			productRefGroup = 96FE2DF819ABEB6B0017982B /* Products */;
-			projectDirPath = "";
-			projectRoot = "";
-			targets = (
-				96FE2DF619ABEB6B0017982B /* Touch */,
-				96FE2E0619ABEB6B0017982B /* TouchTests */,
-			);
-		};
-/* End PBXProject section */
+if [ "$CALLED_FROM_MASTER" ]
+then
+# This is the other build, called from the original instance
+exit 0
+fi
 
-/* Begin PBXResourcesBuildPhase section */
-		96FE2E0519ABEB6B0017982B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
+# Find the BASESDK version number
+SDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\{3\}$')
 
-/* Begin PBXShellScriptBuildPhase section */
-		96FE2DF119ABEB6B0017982B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\n\nif [ \"$CALLED_FROM_MASTER\" ]\nthen\n# This is the other build, called from the original instance\nexit 0\nfi\n\n# Clean up prior to build\n\nCURRENTCONFIG_DEVICE_DIR=\"${SYMROOT}/${CONFIGURATION}-iphoneos\"\nCURRENTCONFIG_SIMULATOR_DIR=\"${SYMROOT}/${CONFIGURATION}-iphonesimulator\"\nCURRENTCONFIG_UNIVERSAL_DIR=\"${SYMROOT}/${CONFIGURATION}-universal\"\n\nif [ ! -f \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" ]; then\n  echo \"Device build cleaned; cleaning other builds too\"\n  rm -f \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\" \n  rm -f \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nelif [ ! -f \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\" ]; then\n  echo \"Simulator build cleaned; cleaning other builds too\"\n  rm -f \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\"\n  rm -f \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		96FE2DF519ABEB6B0017982B /* ShellScript */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "set -e\n\n#\n# Universal static library script\n# http://github.com/michaeltyson/iOS-Universal-Library-Template\n#\n# Version 2.5\n#\n# Purpose:\n#   Create a static library for iPhone from within XCode\n#\n# Author: Adam Martin - http://twitter.com/redglassesapps\n# Tweaked and made into an Xcode template by Michael Tyson - http://atastypixel.com/blog\n# Based on original script from Eonil\n# More info: see this Stack Overflow question: http://stackoverflow.com/questions/3520977/build-fat-static-library-device-simulator-using-xcode-and-sdk-4\n# Additional changes by John Lawson <http://jelawson.com> to copy the CURRENTCONFIG_DEVICE_DIR to the CURRENTCONFIG_UNIVERSAL_DIR instead of creating it\n# to include other files that might have been copied via Copy Files build phases (e.g. readme files, xibs, etc); this removes the need to copy just\n# the header folder.\n#\n#################[ Tests: helps workaround any future bugs in Xcode ]########\n#\nDEBUG_THIS_SCRIPT=\"true\"\n\nif [ $DEBUG_THIS_SCRIPT = \"true\" ]\nthen\necho \"########### TESTS #############\"\necho \"Use the following variables when debugging this script; note that they may change on recursions\"\necho \"BUILD_DIR = $BUILD_DIR\"\necho \"BUILD_ROOT = $BUILD_ROOT\"\necho \"CONFIGURATION_BUILD_DIR = $CONFIGURATION_BUILD_DIR\"\necho \"BUILT_PRODUCTS_DIR = $BUILT_PRODUCTS_DIR\"\necho \"CONFIGURATION_TEMP_DIR = $CONFIGURATION_TEMP_DIR\"\necho \"TARGET_BUILD_DIR = $TARGET_BUILD_DIR\"\nfi\n\nif [ \"$CALLED_FROM_MASTER\" ]\nthen\n# This is the other build, called from the original instance\nexit 0\nfi\n\n# Find the BASESDK version number\nSDK_VERSION=$(echo ${SDK_NAME} | grep -o '.\\{3\\}$')\n\n# Next, work out if we're in SIM or DEVICE\nif [ ${PLATFORM_NAME} = \"iphonesimulator\" ]\nthen\nOTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}\nelse\nOTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}\nfi\n\necho \"XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})\"\necho \"...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}\"\n\n# Build the other architecture\necho \"xcodebuild -project \\\"${PROJECT_FILE_PATH}\\\" -configuration \\\"${CONFIGURATION}\\\" -target \\\"${TARGET_NAME}\\\" -sdk \\\"${OTHER_SDK_TO_BUILD}\\\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\\\"${BUILD_DIR}\\\" BUILD_ROOT=\\\"${BUILD_ROOT}\\\" CALLED_FROM_MASTER=1\"\nxcodebuild -project \"${PROJECT_FILE_PATH}\" -configuration \"${CONFIGURATION}\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" CALLED_FROM_MASTER=1\n\n# Merge built architectures\nCURRENTCONFIG_DEVICE_DIR=\"${SYMROOT}/${CONFIGURATION}-iphoneos\"\nCURRENTCONFIG_SIMULATOR_DIR=\"${SYMROOT}/${CONFIGURATION}-iphonesimulator\"\nCURRENTCONFIG_UNIVERSAL_DIR=\"${SYMROOT}/${CONFIGURATION}-universal\"\n\necho \"Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}\"\necho \"Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}\"\necho \"...I will output a universal build to: ${CURRENTCONFIG_UNIVERSAL_DIR}\"\n\nif [ ! -e \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" -o \\\n\"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" -nt \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" -o \\\n\"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\" -nt \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" ]\nthen\nrm -rf \"${CURRENTCONFIG_UNIVERSAL_DIR}\"\ncp -R \"${CURRENTCONFIG_DEVICE_DIR}\" \"${CURRENTCONFIG_UNIVERSAL_DIR}\"\nrm -f \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\n\necho \"lipo: for current configuration (${CONFIGURATION}) creating output file: ${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\nlipo -create -output \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\n\necho \"Copying universal build back over to ${CURRENTCONFIG_DEVICE_DIR} and ${CURRENTCONFIG_SIMULATOR_DIR}\"\ncp \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}\"\ncp \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\" \"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}\"\ntouch \"${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}\"\n\nelse\necho \"Everything up to date.\"\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
+# Next, work out if we're in SIM or DEVICE
+if [ ${PLATFORM_NAME} = "iphonesimulator" ]
+then
+OTHER_SDK_TO_BUILD=iphoneos${SDK_VERSION}
+else
+OTHER_SDK_TO_BUILD=iphonesimulator${SDK_VERSION}
+fi
 
-/* Begin PBXSourcesBuildPhase section */
-		96FE2DF219ABEB6B0017982B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				9695D8BD19AC1C9A005E62FC /* TMKeenBackendHelper.m in Sources */,
-				96FE2E0219ABEB6B0017982B /* Touch.m in Sources */,
-				9695D8B919AC1C21005E62FC /* TMBackendHelper.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		96FE2E0319ABEB6B0017982B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXSourcesBuildPhase section */
+echo "XCode has selected SDK: ${PLATFORM_NAME} with version: ${SDK_VERSION} (although back-targetting: ${IPHONEOS_DEPLOYMENT_TARGET})"
+echo "...therefore, OTHER_SDK_TO_BUILD = ${OTHER_SDK_TO_BUILD}"
 
-/* Begin XCBuildConfiguration section */
-		96FE2E0B19ABEB6C0017982B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_OPTIMIZATION_LEVEL = 0;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-			};
-			name = Debug;
-		};
-		96FE2E0C19ABEB6C0017982B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				MTL_ENABLE_DEBUG_INFO = NO;
-				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
-			};
-			name = Release;
-		};
-		96FE2E0E19ABEB6C0017982B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				DSTROOT = /tmp/Touch.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Touch/Touch-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Debug;
-		};
-		96FE2E0F19ABEB6C0017982B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				DSTROOT = /tmp/Touch.dst;
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Touch/Touch-Prefix.pch";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		96FE2E1119ABEB6C0017982B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TouchTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-			};
-			name = Debug;
-		};
-		96FE2E1219ABEB6C0017982B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = TouchTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-/* End XCBuildConfiguration section */
+# Build the other architecture
+echo "xcodebuild -project \"${PROJECT_FILE_PATH}\" -configuration \"${CONFIGURATION}\" -target \"${TARGET_NAME}\" -sdk \"${OTHER_SDK_TO_BUILD}\" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR=\"${BUILD_DIR}\" BUILD_ROOT=\"${BUILD_ROOT}\" CALLED_FROM_MASTER=1"
+xcodebuild -project "${PROJECT_FILE_PATH}" -configuration "${CONFIGURATION}" -target "${TARGET_NAME}" -sdk "${OTHER_SDK_TO_BUILD}" ${ACTION} RUN_CLANG_STATIC_ANALYZER=NO BUILD_DIR="${BUILD_DIR}" BUILD_ROOT="${BUILD_ROOT}" CALLED_FROM_MASTER=1
 
-/* Begin XCConfigurationList section */
-		96FE2DF019ABEB6B0017982B /* Build configuration list for PBXProject "Touch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				96FE2E0B19ABEB6C0017982B /* Debug */,
-				96FE2E0C19ABEB6C0017982B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		96FE2E0D19ABEB6C0017982B /* Build configuration list for PBXNativeTarget "Touch" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				96FE2E0E19ABEB6C0017982B /* Debug */,
-				96FE2E0F19ABEB6C0017982B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		96FE2E1019ABEB6C0017982B /* Build configuration list for PBXNativeTarget "TouchTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				96FE2E1119ABEB6C0017982B /* Debug */,
-				96FE2E1219ABEB6C0017982B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-/* End XCConfigurationList section */
-	};
-	rootObject = 96FE2DED19ABEB6B0017982B /* Project object */;
-}
+# Merge built architectures
+CURRENTCONFIG_DEVICE_DIR="${SYMROOT}/${CONFIGURATION}-iphoneos"
+CURRENTCONFIG_SIMULATOR_DIR="${SYMROOT}/${CONFIGURATION}-iphonesimulator"
+CURRENTCONFIG_UNIVERSAL_DIR="${SYMROOT}/${CONFIGURATION}-universal"
+
+echo "Taking device build from: ${CURRENTCONFIG_DEVICE_DIR}"
+echo "Taking simulator build from: ${CURRENTCONFIG_SIMULATOR_DIR}"
+echo "...I will output a universal build to: ${CURRENTCONFIG_UNIVERSAL_DIR}"
+
+if [ ! -e "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}" -o \
+"${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}" -nt "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}" -o \
+"${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}" -nt "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}" ]
+then
+rm -rf "${CURRENTCONFIG_UNIVERSAL_DIR}"
+cp -R "${CURRENTCONFIG_DEVICE_DIR}" "${CURRENTCONFIG_UNIVERSAL_DIR}"
+rm -f "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}"
+
+echo "lipo: for current configuration (${CONFIGURATION}) creating output file: ${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}"
+lipo -create -output "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}" "${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}" "${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}"
+
+echo "Copying universal build back over to ${CURRENTCONFIG_DEVICE_DIR} and ${CURRENTCONFIG_SIMULATOR_DIR}"
+cp "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}" "${CURRENTCONFIG_DEVICE_DIR}/${EXECUTABLE_NAME}"
+cp "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}" "${CURRENTCONFIG_SIMULATOR_DIR}/${EXECUTABLE_NAME}"
+touch "${CURRENTCONFIG_UNIVERSAL_DIR}/${EXECUTABLE_NAME}"
+
+else
+echo "Everything up to date."
+fi
+</string>
+			<key>showEnvVarsInLog</key>
+			<string>0</string>
+		</dict>
+		<key>96FE2DF619ABEB6B0017982B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>96FE2E0D19ABEB6C0017982B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>3BE5FEB8D826438F81314406</string>
+				<string>96FE2DF119ABEB6B0017982B</string>
+				<string>96FE2DF219ABEB6B0017982B</string>
+				<string>96FE2DF319ABEB6B0017982B</string>
+				<string>96FE2DF419ABEB6B0017982B</string>
+				<string>96FE2DF519ABEB6B0017982B</string>
+				<string>3585FF7B25B14419868B49C7</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>Touch</string>
+			<key>productName</key>
+			<string>Touch</string>
+			<key>productReference</key>
+			<string>96FE2DF719ABEB6B0017982B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.library.static</string>
+		</dict>
+		<key>96FE2DF719ABEB6B0017982B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>archive.ar</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>libTouch.a</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>96FE2DF819ABEB6B0017982B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>96FE2DF719ABEB6B0017982B</string>
+				<string>96FE2E0719ABEB6B0017982B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Products</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2DF919ABEB6B0017982B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>96FE2DFA19ABEB6B0017982B</string>
+				<string>8ED805D778FF4C4BA309A0A7</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2DFA19ABEB6B0017982B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Foundation.framework</string>
+			<key>path</key>
+			<string>/System/Library/Frameworks/Foundation.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;absolute&gt;</string>
+		</dict>
+		<key>96FE2DFB19ABEB6B0017982B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>96FE2DFA19ABEB6B0017982B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>96FE2DFC19ABEB6B0017982B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>96FE2DFD19ABEB6B0017982B</string>
+				<string>96FE2DFF19ABEB6B0017982B</string>
+				<string>96FE2E0119ABEB6B0017982B</string>
+				<string>9695D8B619AC1C21005E62FC</string>
+				<string>9695D8B719AC1C21005E62FC</string>
+				<string>9695D8BA19AC1C9A005E62FC</string>
+				<string>9695D8BB19AC1C9A005E62FC</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>Touch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2DFD19ABEB6B0017982B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Touch-Prefix.pch</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2DFE19ABEB6B0017982B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>96FE2DFD19ABEB6B0017982B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>96FE2DFF19ABEB6B0017982B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.h</string>
+			<key>path</key>
+			<string>Touch.h</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2E0019ABEB6B0017982B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>96FE2DFF19ABEB6B0017982B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>96FE2E0119ABEB6B0017982B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>sourcecode.c.objc</string>
+			<key>path</key>
+			<string>Touch.m</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2E0219ABEB6B0017982B</key>
+		<dict>
+			<key>fileRef</key>
+			<string>96FE2E0119ABEB6B0017982B</string>
+			<key>isa</key>
+			<string>PBXBuildFile</string>
+		</dict>
+		<key>96FE2E0319ABEB6B0017982B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXSourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>96FE2E0419ABEB6B0017982B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXFrameworksBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>96FE2E0519ABEB6B0017982B</key>
+		<dict>
+			<key>buildActionMask</key>
+			<string>2147483647</string>
+			<key>files</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXResourcesBuildPhase</string>
+			<key>runOnlyForDeploymentPostprocessing</key>
+			<string>0</string>
+		</dict>
+		<key>96FE2E0619ABEB6B0017982B</key>
+		<dict>
+			<key>buildConfigurationList</key>
+			<string>96FE2E1019ABEB6C0017982B</string>
+			<key>buildPhases</key>
+			<array>
+				<string>96FE2E0319ABEB6B0017982B</string>
+				<string>96FE2E0419ABEB6B0017982B</string>
+				<string>96FE2E0519ABEB6B0017982B</string>
+			</array>
+			<key>buildRules</key>
+			<array/>
+			<key>dependencies</key>
+			<array/>
+			<key>isa</key>
+			<string>PBXNativeTarget</string>
+			<key>name</key>
+			<string>TouchTests</string>
+			<key>productName</key>
+			<string>TouchTests</string>
+			<key>productReference</key>
+			<string>96FE2E0719ABEB6B0017982B</string>
+			<key>productType</key>
+			<string>com.apple.product-type.bundle.unit-test</string>
+		</dict>
+		<key>96FE2E0719ABEB6B0017982B</key>
+		<dict>
+			<key>explicitFileType</key>
+			<string>wrapper.cfbundle</string>
+			<key>includeInIndex</key>
+			<string>0</string>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>path</key>
+			<string>TouchTests.xctest</string>
+			<key>sourceTree</key>
+			<string>BUILT_PRODUCTS_DIR</string>
+		</dict>
+		<key>96FE2E0819ABEB6B0017982B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>96FE2E0919ABEB6B0017982B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>path</key>
+			<string>TouchTests</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2E0919ABEB6B0017982B</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>96FE2E0A19ABEB6B0017982B</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Supporting Files</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2E0A19ABEB6B0017982B</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>text.plist.xml</string>
+			<key>path</key>
+			<string>Info.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>96FE2E0B19ABEB6C0017982B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_DYNAMIC_NO_PIC</key>
+				<string>NO</string>
+				<key>GCC_OPTIMIZATION_LEVEL</key>
+				<string>0</string>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
+				<string>NO</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>YES</string>
+				<key>ONLY_ACTIVE_ARCH</key>
+				<string>YES</string>
+				<key>SUPPORTED_PLATFORMS</key>
+				<string>iphonesimulator iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>96FE2E0C19ABEB6C0017982B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>ALWAYS_SEARCH_USER_PATHS</key>
+				<string>NO</string>
+				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
+				<string>gnu++0x</string>
+				<key>CLANG_CXX_LIBRARY</key>
+				<string>libc++</string>
+				<key>CLANG_ENABLE_MODULES</key>
+				<string>YES</string>
+				<key>CLANG_ENABLE_OBJC_ARC</key>
+				<string>YES</string>
+				<key>CLANG_WARN_BOOL_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_EMPTY_BODY</key>
+				<string>YES</string>
+				<key>CLANG_WARN_ENUM_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_INT_CONVERSION</key>
+				<string>YES</string>
+				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
+				<string>YES_ERROR</string>
+				<key>CLANG_WARN_UNREACHABLE_CODE</key>
+				<string>YES</string>
+				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
+				<string>YES</string>
+				<key>COPY_PHASE_STRIP</key>
+				<string>YES</string>
+				<key>ENABLE_NS_ASSERTIONS</key>
+				<string>NO</string>
+				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
+				<string>YES</string>
+				<key>GCC_C_LANGUAGE_STANDARD</key>
+				<string>gnu99</string>
+				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
+				<string>YES</string>
+				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
+				<string>YES_ERROR</string>
+				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
+				<string>YES_AGGRESSIVE</string>
+				<key>GCC_WARN_UNUSED_FUNCTION</key>
+				<string>YES</string>
+				<key>GCC_WARN_UNUSED_VARIABLE</key>
+				<string>YES</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>6.0</string>
+				<key>MTL_ENABLE_DEBUG_INFO</key>
+				<string>NO</string>
+				<key>SUPPORTED_PLATFORMS</key>
+				<string>iphonesimulator iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>96FE2E0D19ABEB6C0017982B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>96FE2E0E19ABEB6C0017982B</string>
+				<string>96FE2E0F19ABEB6C0017982B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>96FE2E0E19ABEB6C0017982B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>20AA9AB127D44F048F09D8DE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>DSTROOT</key>
+				<string>/tmp/Touch.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Touch/Touch-Prefix.pch</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>96FE2E0F19ABEB6C0017982B</key>
+		<dict>
+			<key>baseConfigurationReference</key>
+			<string>20AA9AB127D44F048F09D8DE</string>
+			<key>buildSettings</key>
+			<dict>
+				<key>ARCHS</key>
+				<string>$(ARCHS_STANDARD_32_BIT)</string>
+				<key>DSTROOT</key>
+				<string>/tmp/Touch.dst</string>
+				<key>GCC_PRECOMPILE_PREFIX_HEADER</key>
+				<string>YES</string>
+				<key>GCC_PREFIX_HEADER</key>
+				<string>Touch/Touch-Prefix.pch</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SKIP_INSTALL</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+		<key>96FE2E1019ABEB6C0017982B</key>
+		<dict>
+			<key>buildConfigurations</key>
+			<array>
+				<string>96FE2E1119ABEB6C0017982B</string>
+				<string>96FE2E1219ABEB6C0017982B</string>
+			</array>
+			<key>defaultConfigurationIsVisible</key>
+			<string>0</string>
+			<key>defaultConfigurationName</key>
+			<string>Release</string>
+			<key>isa</key>
+			<string>XCConfigurationList</string>
+		</dict>
+		<key>96FE2E1119ABEB6C0017982B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
+				<array>
+					<string>DEBUG=1</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>TouchTests/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Debug</string>
+		</dict>
+		<key>96FE2E1219ABEB6C0017982B</key>
+		<dict>
+			<key>buildSettings</key>
+			<dict>
+				<key>FRAMEWORK_SEARCH_PATHS</key>
+				<array>
+					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
+					<string>$(inherited)</string>
+				</array>
+				<key>INFOPLIST_FILE</key>
+				<string>TouchTests/Info.plist</string>
+				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
+				<string>8.0</string>
+				<key>LD_RUNPATH_SEARCH_PATHS</key>
+				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
+				<key>PRODUCT_NAME</key>
+				<string>$(TARGET_NAME)</string>
+				<key>SDKROOT</key>
+				<string>iphoneos</string>
+				<key>VALIDATE_PRODUCT</key>
+				<string>YES</string>
+			</dict>
+			<key>isa</key>
+			<string>XCBuildConfiguration</string>
+			<key>name</key>
+			<string>Release</string>
+		</dict>
+	</dict>
+	<key>rootObject</key>
+	<string>96FE2DED19ABEB6B0017982B</string>
+</dict>
+</plist>

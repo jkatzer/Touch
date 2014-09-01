@@ -12,8 +12,26 @@
 
 + (TMBackendHelper *)helper {
   //THIS NEEDS TO BE SUBCLASSED!!!
-  //MAY BE WORTH FIRING AN ERROR
   return nil;
 }
+
+-(NSString* )libraryName{
+  //THIS NEEDS TO BE SUBCLASSED!!!
+  return nil;
+}
+
+-(void)initialize {
+  //THIS NEEDS TO BE SUBCLASSED!!!
+}
+
+-(void)setupWithDictionary:(NSDictionary*)dictionary {
+  self.key = dictionary[@"key"];
+  self.token = dictionary[@"token"];
+}
+
+-(void)trackEvent:(NSDictionary*)event {
+  //THIS NEEDS TO BE SUBCLASSED!!!
+}
+
 
 @end
