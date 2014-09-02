@@ -31,11 +31,15 @@
 +(id)analyticsManagerForBackend:(NSString*)backend;
 
 
+
+//instance methods
+-(void)addEvent:(NSDictionary*)event;
+
+
+//instance properties
+
 @property (nonatomic, assign) BOOL verbose;
 @property (nonatomic, assign) int interval;
-
-
-//private-ish methods
 
 
 @end

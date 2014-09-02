@@ -94,7 +94,7 @@
 }
 
 
--(void)addEvent:(NSDictionary*)event{
+-(void)addEvent:(NSDictionary*)event {
   for (NSDictionary* backendService in [_backends allValues]) {
     for (TMBackendHelper* backend in [backendService allValues]) {
       [backend trackEvent:event];
@@ -102,10 +102,22 @@
   }
 }
 
-+(void)addEvent:(NSDictionary*)event{
++(void)addEvent:(NSDictionary*)event {
   [[Touch touchManager] addEvent:event];
 }
 
+
+-(void)addEvent:(NSDictionary *)event toCollection:(NSString *)collection error:(NSError *)error {
+  for (NSDictionary* backendService in [_backends allValues]) {
+    for (TMBackendHelper* backend in [backendService allValues]) {
+      [backend trackEvent:event toCollection:collection error:error];
+    }
+  }
+}
+
++(void)addEvent:(NSDictionary *)event toCollection:(NSString *)collection error:(NSError *)error {
+  [[Touch touchManager] addEvent:event toCollection:collection error:error];
+}
 
 
 @end

@@ -15,6 +15,8 @@
 
 -(void)initializeBackend;
 -(void)trackEvent:(NSDictionary*)event;
+-(void)trackEvent:(NSDictionary *)event toCollection:(NSString *)collection error:(NSError *)error;
+
 -(void)setupWithDictionary:(NSDictionary*)dictionary;
 
 -(NSString* )backendName;

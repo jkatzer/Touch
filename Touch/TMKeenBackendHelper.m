@@ -42,6 +42,19 @@
   }
 }
 
+-(void)trackEvent:(NSDictionary *)event toCollection:(NSString *)collection error:(NSError *)error {
+  [super trackEvent:event toCollection:collection error:error];
+
+  [[KeenClient sharedClient] addEvent:event toEventCollection:self.defaultCollection error:&error];
+
+  if (error) {
+    [self log:error.description];
+    [self.failedEvents addObject:event];
+  }
+
+}
+
+
 -(void)uploadEvents{
   UIApplication* application = [UIApplication sharedApplication];
 
