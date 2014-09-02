@@ -8,6 +8,7 @@
 
 #import "TMKeenBackendHelper.h"
 #import <KeenClient/KeenClient.h>
+#import <UIKit/UIKit.h>
 
 @implementation TMKeenBackendHelper
 
@@ -29,14 +30,28 @@
 }
 
 -(void)trackEvent:(NSDictionary *)event{
+  [super trackEvent:event];
+
   NSError* err;
 
   [[KeenClient sharedClient] addEvent:event toEventCollection:self.defaultCollection error:&err];
 
   if (err) {
-    NSLog(@"Touch-%@ error:%@", self.backendName, err.description);
+    [self log:err.description];
     [self.failedEvents addObject:event];
   }
+}
+
+-(void)uploadEvents{
+  UIApplication* application = [UIApplication sharedApplication];
+
+  UIBackgroundTaskIdentifier taskId = [application beginBackgroundTaskWithExpirationHandler:^(void) {
+    [self uploadIsBeingExpired];
+  }];
+
+  [[KeenClient sharedClient] uploadWithFinishedBlock:^(void) {
+    [application endBackgroundTask:taskId];
+  }];
 }
 
 @end

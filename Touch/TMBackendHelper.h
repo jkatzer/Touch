@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Touch.h"
 
 @interface TMBackendHelper : NSObject
 
@@ -17,6 +18,9 @@
 -(void)setupWithDictionary:(NSDictionary*)dictionary;
 
 -(NSString* )backendName;
+
+-(void)log:(NSString*)logMessage;
+-(void)uploadIsBeingExpired;
 
 @property (nonatomic, assign) BOOL isSetup;
 @property (nonatomic, retain) NSString* key;

@@ -22,6 +22,7 @@
 
 //advanced features
 +(void)setInterval:(NSInteger)interval;
++(BOOL)verbose;
 +(void)setVerbose:(BOOL)isVerbose;
 +(void)addEvent:(NSDictionary*)event;
 +(void)addEvent:(NSDictionary*)event toCollection:(NSString*)collection error:(NSError*)error;
@@ -29,6 +30,8 @@
 //super-advanced features
 +(id)analyticsManagerForBackend:(NSString*)backend;
 
+
+@property (nonatomic, assign) BOOL verbose;
 
 //private-ish methods
 

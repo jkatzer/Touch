@@ -12,6 +12,7 @@
 @implementation Touch {
   NSMutableDictionary* _backends;
   NSMutableDictionary* _unsentEvents;
+  NSDictionary* _availableBackends;
 }
 
 + (Touch *)touchManager
@@ -23,6 +24,16 @@
   });
 
   return _shared;
+}
+
+-(id)init{
+  self = [super init];
+  if (self) {
+    //TODO: load in available backends from a PLIST
+    _availableBackends = @{@"Keen":@"something"};
+  }
+
+  return self;
 }
 
 +(void)setupBackend:(NSString*)backendName withId:(NSString*)backendId andToken:(NSString*)backendToken
@@ -39,7 +50,13 @@
 {
 }
 
++(BOOL)verbose{
+  return [Touch touchManager].verbose;
+}
 
++(void)setVerbose:(BOOL)isVerbose{
+  [Touch touchManager].verbose = isVerbose;
+}
 
 //instance methods
 -(id)helperForBackend:(NSString*)backendName

@@ -10,12 +10,14 @@
 
 @implementation TMBackendHelper
 
+static const NSString* libraryName = @"Touch";
+
 + (TMBackendHelper *)helper {
   //THIS NEEDS TO BE SUBCLASSED!!!
   return nil;
 }
 
--(NSString* )libraryName{
+-(NSString* )backendName{
   //THIS NEEDS TO BE SUBCLASSED!!!
   return nil;
 }
@@ -30,8 +32,19 @@
 }
 
 -(void)trackEvent:(NSDictionary*)event {
-  //THIS NEEDS TO BE SUBCLASSED!!!
+  [self log:[NSString stringWithFormat:@"event: %@", event]];
 }
+
+-(void)log:(NSString *)logMessage {
+  if ([Touch verbose]) {
+    NSLog(@"%@: %@: %@", libraryName, self.backendName, logMessage);
+  }
+}
+
+-(void)uploadIsBeingExpired {
+  [self log:@"upload task being expired"];
+}
+
 
 
 @end
