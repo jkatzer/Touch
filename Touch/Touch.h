@@ -32,6 +32,8 @@
 
 
 @property (nonatomic, assign) BOOL verbose;
+@property (nonatomic, assign) int interval;
+
 
 //private-ish methods
 

@@ -22,7 +22,7 @@ static const NSString* libraryName = @"Touch";
   return nil;
 }
 
--(void)initialize {
+-(void)initializeBackend {
   //THIS NEEDS TO BE SUBCLASSED!!!
 }
 

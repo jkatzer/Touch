@@ -50,12 +50,16 @@
 {
 }
 
-+(BOOL)verbose{
++(BOOL)verbose {
   return [Touch touchManager].verbose;
 }
 
-+(void)setVerbose:(BOOL)isVerbose{
++(void)setVerbose:(BOOL)isVerbose {
   [Touch touchManager].verbose = isVerbose;
+}
+
++(void)setInterval:(NSInteger)interval {
+  [Touch touchManager].interval = interval;
 }
 
 //instance methods
@@ -87,6 +91,19 @@
       _backends[backendName][backendId] = backend;
     }
   }
+}
+
+
+-(void)addEvent:(NSDictionary*)event{
+  for (NSDictionary* backendService in [_backends allValues]) {
+    for (TMBackendHelper* backend in [backendService allValues]) {
+      [backend trackEvent:event];
+    }
+  }
+}
+
++(void)addEvent:(NSDictionary*)event{
+  [[Touch touchManager] addEvent:event];
 }
 
 
