@@ -79,7 +79,12 @@
     }
 
     if (_backends[backendName][backendId] == nil) {
-
+       TMBackendHelper* backend = [self helperForBackend:backendName];
+      backend.key = backendId;
+      backend.token = backendToken;
+      [backend initializeBackend];
+      
+      _backends[backendName][backendId] = backend;
     }
   }
 }
