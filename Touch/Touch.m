@@ -29,6 +29,7 @@
 -(id)init{
   self = [super init];
   if (self) {
+    NSLog(@"Touch initialized");
     //TODO: load in available backends from a PLIST
     _availableBackends = @{@"Keen":@"something"};
   }

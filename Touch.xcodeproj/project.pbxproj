@@ -9,6 +9,16 @@
 /* Begin PBXBuildFile section */
 		558A99771F674A4A8C740822 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8ED805D778FF4C4BA309A0A7 /* libPods.a */; };
 		960CE57519B538FC005745B3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 960CE57419B538FC005745B3 /* UIKit.framework */; };
+		963637831A74530800D013B7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 963637821A74530800D013B7 /* main.m */; };
+		963637861A74530800D013B7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 963637851A74530800D013B7 /* AppDelegate.m */; };
+		963637891A74530800D013B7 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 963637881A74530800D013B7 /* FirstViewController.m */; };
+		9636378C1A74530800D013B7 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9636378B1A74530800D013B7 /* SecondViewController.m */; };
+		9636378F1A74530800D013B7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9636378D1A74530800D013B7 /* Main.storyboard */; };
+		963637911A74530800D013B7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 963637901A74530800D013B7 /* Images.xcassets */; };
+		963637941A74530800D013B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963637921A74530800D013B7 /* LaunchScreen.xib */; };
+		963637A01A74530800D013B7 /* TouchExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9636379F1A74530800D013B7 /* TouchExampleAppTests.m */; };
+		963637A71A7453AA00D013B7 /* libTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FE2DF719ABEB6B0017982B /* libTouch.a */; };
+		963637A91A7453AA00D013B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963637A81A7453AA00D013B7 /* libPods.a */; };
 		9695D8B819AC1C21005E62FC /* TMBackendHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9695D8B619AC1C21005E62FC /* TMBackendHelper.h */; };
 		9695D8B919AC1C21005E62FC /* TMBackendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695D8B719AC1C21005E62FC /* TMBackendHelper.m */; };
 		9695D8BC19AC1C9A005E62FC /* TMKeenBackendHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */; };
@@ -19,10 +29,43 @@
 		96FE2E0219ABEB6B0017982B /* Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = 96FE2E0119ABEB6B0017982B /* Touch.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		9636379A1A74530800D013B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96FE2DED19ABEB6B0017982B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9636377D1A74530800D013B7;
+			remoteInfo = TouchExampleApp;
+		};
+		963637AA1A7455A900D013B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 96FE2DED19ABEB6B0017982B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 96FE2DF619ABEB6B0017982B;
+			remoteInfo = Touch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		20AA9AB127D44F048F09D8DE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
 		8ED805D778FF4C4BA309A0A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		960CE57419B538FC005745B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		9636377E1A74530800D013B7 /* TouchExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		963637811A74530800D013B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		963637821A74530800D013B7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		963637841A74530800D013B7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		963637851A74530800D013B7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		963637871A74530800D013B7 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		963637881A74530800D013B7 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		9636378A1A74530800D013B7 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
+		9636378B1A74530800D013B7 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		9636378E1A74530800D013B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		963637901A74530800D013B7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		963637931A74530800D013B7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		963637991A74530800D013B7 /* TouchExampleAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchExampleAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9636379E1A74530800D013B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9636379F1A74530800D013B7 /* TouchExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchExampleAppTests.m; sourceTree = "<group>"; };
+		963637A81A7453AA00D013B7 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
 		9695D8B619AC1C21005E62FC /* TMBackendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBackendHelper.h; sourceTree = "<group>"; };
 		9695D8B719AC1C21005E62FC /* TMBackendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBackendHelper.m; sourceTree = "<group>"; };
 		9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMKeenBackendHelper.h; sourceTree = "<group>"; };
@@ -37,6 +80,22 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		9636377B1A74530800D013B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963637A91A7453AA00D013B7 /* libPods.a in Frameworks */,
+				963637A71A7453AA00D013B7 /* libTouch.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963637961A74530800D013B7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96FE2DF319ABEB6B0017982B /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,11 +116,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9636377F1A74530800D013B7 /* TouchExampleApp */ = {
+			isa = PBXGroup;
+			children = (
+				963637841A74530800D013B7 /* AppDelegate.h */,
+				963637851A74530800D013B7 /* AppDelegate.m */,
+				963637871A74530800D013B7 /* FirstViewController.h */,
+				963637881A74530800D013B7 /* FirstViewController.m */,
+				9636378A1A74530800D013B7 /* SecondViewController.h */,
+				9636378B1A74530800D013B7 /* SecondViewController.m */,
+				9636378D1A74530800D013B7 /* Main.storyboard */,
+				963637901A74530800D013B7 /* Images.xcassets */,
+				963637921A74530800D013B7 /* LaunchScreen.xib */,
+				963637801A74530800D013B7 /* Supporting Files */,
+			);
+			path = TouchExampleApp;
+			sourceTree = "<group>";
+		};
+		963637801A74530800D013B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				963637811A74530800D013B7 /* Info.plist */,
+				963637821A74530800D013B7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9636379C1A74530800D013B7 /* TouchExampleAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				9636379F1A74530800D013B7 /* TouchExampleAppTests.m */,
+				9636379D1A74530800D013B7 /* Supporting Files */,
+			);
+			path = TouchExampleAppTests;
+			sourceTree = "<group>";
+		};
+		9636379D1A74530800D013B7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9636379E1A74530800D013B7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		96FE2DEC19ABEB6B0017982B = {
 			isa = PBXGroup;
 			children = (
 				96FE2DFC19ABEB6B0017982B /* Touch */,
 				96FE2E0819ABEB6B0017982B /* TouchTests */,
+				9636377F1A74530800D013B7 /* TouchExampleApp */,
+				9636379C1A74530800D013B7 /* TouchExampleAppTests */,
 				96FE2DF919ABEB6B0017982B /* Frameworks */,
 				96FE2DF819ABEB6B0017982B /* Products */,
 				20AA9AB127D44F048F09D8DE /* Pods.xcconfig */,
@@ -73,6 +177,8 @@
 			children = (
 				96FE2DF719ABEB6B0017982B /* libTouch.a */,
 				96FE2E0719ABEB6B0017982B /* TouchTests.xctest */,
+				9636377E1A74530800D013B7 /* TouchExampleApp.app */,
+				963637991A74530800D013B7 /* TouchExampleAppTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -80,6 +186,7 @@
 		96FE2DF919ABEB6B0017982B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				963637A81A7453AA00D013B7 /* libPods.a */,
 				960CE57419B538FC005745B3 /* UIKit.framework */,
 				96FE2DFA19ABEB6B0017982B /* Foundation.framework */,
 				8ED805D778FF4C4BA309A0A7 /* libPods.a */,
@@ -134,6 +241,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		9636377D1A74530800D013B7 /* TouchExampleApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963637A51A74530800D013B7 /* Build configuration list for PBXNativeTarget "TouchExampleApp" */;
+			buildPhases = (
+				9636377A1A74530800D013B7 /* Sources */,
+				9636377B1A74530800D013B7 /* Frameworks */,
+				9636377C1A74530800D013B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				963637AB1A7455A900D013B7 /* PBXTargetDependency */,
+			);
+			name = TouchExampleApp;
+			productName = TouchExampleApp;
+			productReference = 9636377E1A74530800D013B7 /* TouchExampleApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		963637981A74530800D013B7 /* TouchExampleAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 963637A61A74530800D013B7 /* Build configuration list for PBXNativeTarget "TouchExampleAppTests" */;
+			buildPhases = (
+				963637951A74530800D013B7 /* Sources */,
+				963637961A74530800D013B7 /* Frameworks */,
+				963637971A74530800D013B7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9636379B1A74530800D013B7 /* PBXTargetDependency */,
+			);
+			name = TouchExampleAppTests;
+			productName = TouchExampleAppTests;
+			productReference = 963637991A74530800D013B7 /* TouchExampleAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		96FE2DF619ABEB6B0017982B /* Touch */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 96FE2E0D19ABEB6C0017982B /* Build configuration list for PBXNativeTarget "Touch" */;
@@ -181,6 +324,13 @@
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Versa.io;
 				TargetAttributes = {
+					9636377D1A74530800D013B7 = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					963637981A74530800D013B7 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 9636377D1A74530800D013B7;
+					};
 					96FE2DF619ABEB6B0017982B = {
 						CreatedOnToolsVersion = 6.0;
 					};
@@ -195,6 +345,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = 96FE2DEC19ABEB6B0017982B;
 			productRefGroup = 96FE2DF819ABEB6B0017982B /* Products */;
@@ -203,11 +354,30 @@
 			targets = (
 				96FE2DF619ABEB6B0017982B /* Touch */,
 				96FE2E0619ABEB6B0017982B /* TouchTests */,
+				9636377D1A74530800D013B7 /* TouchExampleApp */,
+				963637981A74530800D013B7 /* TouchExampleAppTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		9636377C1A74530800D013B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9636378F1A74530800D013B7 /* Main.storyboard in Resources */,
+				963637941A74530800D013B7 /* LaunchScreen.xib in Resources */,
+				963637911A74530800D013B7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963637971A74530800D013B7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96FE2E0519ABEB6B0017982B /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -279,6 +449,25 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		9636377A1A74530800D013B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9636378C1A74530800D013B7 /* SecondViewController.m in Sources */,
+				963637861A74530800D013B7 /* AppDelegate.m in Sources */,
+				963637891A74530800D013B7 /* FirstViewController.m in Sources */,
+				963637831A74530800D013B7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		963637951A74530800D013B7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				963637A01A74530800D013B7 /* TouchExampleAppTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		96FE2DF219ABEB6B0017982B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -298,7 +487,119 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		9636379B1A74530800D013B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9636377D1A74530800D013B7 /* TouchExampleApp */;
+			targetProxy = 9636379A1A74530800D013B7 /* PBXContainerItemProxy */;
+		};
+		963637AB1A7455A900D013B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 96FE2DF619ABEB6B0017982B /* Touch */;
+			targetProxy = 963637AA1A7455A900D013B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9636378D1A74530800D013B7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9636378E1A74530800D013B7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		963637921A74530800D013B7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				963637931A74530800D013B7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
 /* Begin XCBuildConfiguration section */
+		963637A11A74530800D013B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TouchExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		963637A21A74530800D013B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = TouchExampleApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		963637A31A74530800D013B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TouchExampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchExampleApp.app/TouchExampleApp";
+			};
+			name = Debug;
+		};
+		963637A41A74530800D013B7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TouchExampleAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TouchExampleApp.app/TouchExampleApp";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
 		96FE2E0B19ABEB6C0017982B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -376,7 +677,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20AA9AB127D44F048F09D8DE /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/Touch.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Touch/Touch-Prefix.pch";
@@ -390,7 +691,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 20AA9AB127D44F048F09D8DE /* Pods.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/Touch.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Touch/Touch-Prefix.pch";
@@ -438,6 +739,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		963637A51A74530800D013B7 /* Build configuration list for PBXNativeTarget "TouchExampleApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963637A11A74530800D013B7 /* Debug */,
+				963637A21A74530800D013B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		963637A61A74530800D013B7 /* Build configuration list for PBXNativeTarget "TouchExampleAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				963637A31A74530800D013B7 /* Debug */,
+				963637A41A74530800D013B7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		96FE2DF019ABEB6B0017982B /* Build configuration list for PBXProject "Touch" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
