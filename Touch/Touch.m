@@ -14,6 +14,7 @@
   NSMutableDictionary* _backends;
   NSMutableDictionary* _unsentEvents;
   NSDictionary* _availableBackends;
+  NSTimer* _uploadTimer;
 }
 
 + (Touch *)touchManager
@@ -32,6 +33,7 @@
   self = [super init];
   if (self) {
     NSLog(@"Touch initialized");
+    _backends = [NSMutableDictionary dictionary];
     //TODO: load in available backends from a PLIST
     _availableBackends = @{@"Keen":@"something"};
   }
@@ -47,10 +49,25 @@
 
 +(void)start
 {
+  [[Touch touchManager] startUploading];
+  [[Touch touchManager] uploadEvents];
 }
 
 +(void)stop
 {
+  [[Touch touchManager] stopUploading];
+}
+
+
+-(void)startUploading{
+  _uploadTimer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(uploadEvents) userInfo:nil repeats:YES];
+}
+
+-(void)stopUploading
+{
+  if (_uploadTimer) {
+    [_uploadTimer invalidate];
+  }
 }
 
 +(BOOL)verbose {
@@ -125,5 +142,18 @@
   [[Touch touchManager] addEvent:event toCollection:collection error:error];
 }
 
+
+-(void)uploadEvents
+{
+  if (self.verbose) {
+    NSLog(@"Touch - uplodaing events");
+  }
+
+  for (NSDictionary* backendService in [_backends allValues]) {
+    for (TMBackendHelper* backend in [backendService allValues]) {
+      [backend uploadEvents];
+    }
+  }
+}
 
 @end

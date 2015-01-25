@@ -9,6 +9,7 @@
 //
 
 #import "UIViewController+TouchTracking.h"
+#import "Touch.h"
 #import <objc/runtime.h>
 
 @implementation UIViewController (TouchTracking)
@@ -49,13 +50,22 @@
 - (void)xxx_viewWillAppear:(BOOL)animated {
   [self xxx_viewWillAppear:animated];
   NSLog(@"viewWillAppear: %@", self);
+  [Touch addEvent:@{
+                    @"event":@"viewWillAppear",
+                    @"object":[NSString stringWithFormat:@"%@", self]
+                    }];
 }
 
 - (void)xxx_touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+//  TODO: what view is getting the touch
   if ([self isFirstResponder]) {
     [self xxx_touchesBegan:touches withEvent:event];
   }
   NSLog(@"touchBegan: %@", self);
+  [Touch addEvent:@{
+                    @"event":@"touchesBegan",
+                    @"object":[NSString stringWithFormat:@"%@", self]
+                    }];
 }
 
 

@@ -23,6 +23,7 @@
 
 -(void)log:(NSString*)logMessage;
 -(void)uploadIsBeingExpired;
+-(void)uploadEvents;
 
 @property (nonatomic, assign) BOOL isSetup;
 @property (nonatomic, retain) NSString* key;

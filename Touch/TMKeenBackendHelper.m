@@ -27,6 +27,7 @@
 
 -(void)initializeBackend {
   [KeenClient sharedClientWithProjectId:self.key andWriteKey:self.token andReadKey:self.readKey];
+  self.defaultCollection = @"Touch";
 }
 
 -(void)trackEvent:(NSDictionary *)event{
@@ -56,15 +57,7 @@
 
 
 -(void)uploadEvents{
-  UIApplication* application = [UIApplication sharedApplication];
-
-  UIBackgroundTaskIdentifier taskId = [application beginBackgroundTaskWithExpirationHandler:^(void) {
-    [self uploadIsBeingExpired];
-  }];
-
-  [[KeenClient sharedClient] uploadWithFinishedBlock:^(void) {
-    [application endBackgroundTask:taskId];
-  }];
+  [[KeenClient sharedClient] uploadWithFinishedBlock:nil];
 }
 
 @end
