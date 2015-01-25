@@ -8,6 +8,7 @@
 
 #import "Touch.h"
 #import "TMBackendHelper.h"
+#import "UIViewController+TouchTracking.h"
 
 @implementation Touch {
   NSMutableDictionary* _backends;
@@ -26,16 +27,17 @@
   return _shared;
 }
 
--(id)init{
+-(id)init
+{
   self = [super init];
   if (self) {
     NSLog(@"Touch initialized");
     //TODO: load in available backends from a PLIST
     _availableBackends = @{@"Keen":@"something"};
   }
-
   return self;
 }
+
 
 +(void)setupBackend:(NSString*)backendName withId:(NSString*)backendId andToken:(NSString*)backendToken
 {
@@ -78,6 +80,9 @@
 
 -(void)setupBackend:(NSString*)backendName withId:(NSString*)backendId andToken:(NSString*)backendToken
 {
+  if (self.verbose) {
+    NSLog(@"Touch - setup backend");
+  }
   if (_availableBackends[backendName] != nil) {
     if (_backends[backendName] == nil) {
       _backends[backendName] = [NSMutableDictionary dictionary];

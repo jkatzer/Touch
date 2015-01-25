@@ -18,7 +18,8 @@
 		963637941A74530800D013B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963637921A74530800D013B7 /* LaunchScreen.xib */; };
 		963637A01A74530800D013B7 /* TouchExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9636379F1A74530800D013B7 /* TouchExampleAppTests.m */; };
 		963637A71A7453AA00D013B7 /* libTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FE2DF719ABEB6B0017982B /* libTouch.a */; };
-		963637A91A7453AA00D013B7 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 963637A81A7453AA00D013B7 /* libPods.a */; };
+		966F999E1A74C8F300078D01 /* UIViewController+TouchTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 966F999C1A74C8F300078D01 /* UIViewController+TouchTracking.h */; };
+		966F999F1A74C8F300078D01 /* UIViewController+TouchTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 966F999D1A74C8F300078D01 /* UIViewController+TouchTracking.m */; };
 		9695D8B819AC1C21005E62FC /* TMBackendHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9695D8B619AC1C21005E62FC /* TMBackendHelper.h */; };
 		9695D8B919AC1C21005E62FC /* TMBackendHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 9695D8B719AC1C21005E62FC /* TMBackendHelper.m */; };
 		9695D8BC19AC1C9A005E62FC /* TMKeenBackendHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */; };
@@ -47,7 +48,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		20AA9AB127D44F048F09D8DE /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		06DE45E3A39D8B0AE36B1A8C /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		3C67FAD9DC162577587B1ED4 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		8ED805D778FF4C4BA309A0A7 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		960CE57419B538FC005745B3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		9636377E1A74530800D013B7 /* TouchExampleApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchExampleApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -66,6 +68,8 @@
 		9636379E1A74530800D013B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9636379F1A74530800D013B7 /* TouchExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchExampleAppTests.m; sourceTree = "<group>"; };
 		963637A81A7453AA00D013B7 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		966F999C1A74C8F300078D01 /* UIViewController+TouchTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchTracking.h"; sourceTree = "<group>"; };
+		966F999D1A74C8F300078D01 /* UIViewController+TouchTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchTracking.m"; sourceTree = "<group>"; };
 		9695D8B619AC1C21005E62FC /* TMBackendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMBackendHelper.h; sourceTree = "<group>"; };
 		9695D8B719AC1C21005E62FC /* TMBackendHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMBackendHelper.m; sourceTree = "<group>"; };
 		9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMKeenBackendHelper.h; sourceTree = "<group>"; };
@@ -84,7 +88,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				963637A91A7453AA00D013B7 /* libPods.a in Frameworks */,
 				963637A71A7453AA00D013B7 /* libTouch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -116,6 +119,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		54EA6E3B79006410009256CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				06DE45E3A39D8B0AE36B1A8C /* Pods.debug.xcconfig */,
+				3C67FAD9DC162577587B1ED4 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		9636377F1A74530800D013B7 /* TouchExampleApp */ = {
 			isa = PBXGroup;
 			children = (
@@ -168,7 +180,7 @@
 				9636379C1A74530800D013B7 /* TouchExampleAppTests */,
 				96FE2DF919ABEB6B0017982B /* Frameworks */,
 				96FE2DF819ABEB6B0017982B /* Products */,
-				20AA9AB127D44F048F09D8DE /* Pods.xcconfig */,
+				54EA6E3B79006410009256CA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -204,6 +216,8 @@
 				9695D8B719AC1C21005E62FC /* TMBackendHelper.m */,
 				9695D8BA19AC1C9A005E62FC /* TMKeenBackendHelper.h */,
 				9695D8BB19AC1C9A005E62FC /* TMKeenBackendHelper.m */,
+				966F999C1A74C8F300078D01 /* UIViewController+TouchTracking.h */,
+				966F999D1A74C8F300078D01 /* UIViewController+TouchTracking.m */,
 			);
 			path = Touch;
 			sourceTree = "<group>";
@@ -235,6 +249,7 @@
 				96FE2E0019ABEB6B0017982B /* Touch.h in Headers */,
 				96FE2DFE19ABEB6B0017982B /* Touch-Prefix.pch in Headers */,
 				9695D8BC19AC1C9A005E62FC /* TMKeenBackendHelper.h in Headers */,
+				966F999E1A74C8F300078D01 /* UIViewController+TouchTracking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,7 +336,7 @@
 		96FE2DED19ABEB6B0017982B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0600;
+				LastUpgradeCheck = 0610;
 				ORGANIZATIONNAME = Versa.io;
 				TargetAttributes = {
 					9636377D1A74530800D013B7 = {
@@ -400,7 +415,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		3BE5FEB8D826438F81314406 /* Check Pods Manifest.lock */ = {
@@ -474,6 +489,7 @@
 			files = (
 				9695D8BD19AC1C9A005E62FC /* TMKeenBackendHelper.m in Sources */,
 				96FE2E0219ABEB6B0017982B /* Touch.m in Sources */,
+				966F999F1A74C8F300078D01 /* UIViewController+TouchTracking.m in Sources */,
 				9695D8B919AC1C21005E62FC /* TMBackendHelper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -536,6 +552,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -554,6 +571,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)/Pods/build/Debug-iphoneos",
 				);
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -675,9 +693,8 @@
 		};
 		96FE2E0E19ABEB6C0017982B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20AA9AB127D44F048F09D8DE /* Pods.xcconfig */;
+			baseConfigurationReference = 06DE45E3A39D8B0AE36B1A8C /* Pods.debug.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/Touch.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Touch/Touch-Prefix.pch";
@@ -689,9 +706,8 @@
 		};
 		96FE2E0F19ABEB6C0017982B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 20AA9AB127D44F048F09D8DE /* Pods.xcconfig */;
+			baseConfigurationReference = 3C67FAD9DC162577587B1ED4 /* Pods.release.xcconfig */;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD)";
 				DSTROOT = /tmp/Touch.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Touch/Touch-Prefix.pch";
@@ -746,6 +762,7 @@
 				963637A21A74530800D013B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		963637A61A74530800D013B7 /* Build configuration list for PBXNativeTarget "TouchExampleAppTests" */ = {
 			isa = XCConfigurationList;
@@ -754,6 +771,7 @@
 				963637A41A74530800D013B7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96FE2DF019ABEB6B0017982B /* Build configuration list for PBXProject "Touch" */ = {
 			isa = XCConfigurationList;

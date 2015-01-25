@@ -20,7 +20,7 @@
   // Override point for customization after application launch.
 
   Touch *touchManager = [Touch touchManager];
-
+  touchManager.verbose = YES;
   return YES;
 }
 

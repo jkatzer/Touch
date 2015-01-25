@@ -35,7 +35,6 @@
 //instance methods
 -(void)addEvent:(NSDictionary*)event;
 
-
 //instance properties
 
 @property (nonatomic, assign) BOOL verbose;
