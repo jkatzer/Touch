@@ -5,6 +5,8 @@
 //  Created by Jason Katzer on 1/25/15.
 //  Copyright (c) 2015 Versa.io. All rights reserved.
 //
+//  Method Swizzling style from: http://nshipster.com/method-swizzling/
+//
 
 #import "UIViewController+TouchTracking.h"
 #import <objc/runtime.h>
@@ -16,6 +18,7 @@
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
     [self swizzle:@selector(viewWillAppear:) with:@selector(xxx_viewWillAppear:)];
+    [self swizzle:@selector(touchesBegan:withEvent:) with:@selector(xxx_touchesBegan:withEvent:)];
   });
 }
 
@@ -49,7 +52,10 @@
 }
 
 - (void)xxx_touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-  [self xxx_touchesBegan:touches withEvent:event];
+  if ([self isFirstResponder]) {
+    [self xxx_touchesBegan:touches withEvent:event];
+  }
+  NSLog(@"touchBegan: %@", self);
 }
 
 
