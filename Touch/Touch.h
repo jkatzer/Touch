@@ -38,7 +38,7 @@
 //instance properties
 
 @property (nonatomic, assign) BOOL verbose;
-@property (nonatomic, assign) int interval;
+@property (nonatomic, assign) NSInteger interval;
 
 
 @end

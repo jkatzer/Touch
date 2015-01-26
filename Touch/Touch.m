@@ -9,6 +9,8 @@
 #import "Touch.h"
 #import "TMBackendHelper.h"
 #import "UIViewController+TouchTracking.h"
+#import "UIResponder+TouchTracking.h"
+#import "UIControl+TouchTracking.h"
 
 @implementation Touch {
   NSMutableDictionary* _backends;
