@@ -11,6 +11,7 @@
 #import "UIViewController+TouchTracking.h"
 #import "UIResponder+TouchTracking.h"
 #import "UIControl+TouchTracking.h"
+#import "UIButton+TouchTracking.h"
 
 @implementation Touch {
   NSMutableDictionary* _backends;
@@ -148,7 +149,7 @@
 -(void)uploadEvents
 {
   if (self.verbose) {
-    NSLog(@"Touch - uplodaing events");
+    NSLog(@"Touch - uploading events");
   }
 
   for (NSDictionary* backendService in [_backends allValues]) {

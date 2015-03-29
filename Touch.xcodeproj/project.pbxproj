@@ -18,6 +18,10 @@
 		963637941A74530800D013B7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 963637921A74530800D013B7 /* LaunchScreen.xib */; };
 		963637A01A74530800D013B7 /* TouchExampleAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9636379F1A74530800D013B7 /* TouchExampleAppTests.m */; };
 		963637A71A7453AA00D013B7 /* libTouch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 96FE2DF719ABEB6B0017982B /* libTouch.a */; };
+		96411AEB1AC79AFA005A47B1 /* UIButton+TouchTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 96411AE91AC79AFA005A47B1 /* UIButton+TouchTracking.h */; };
+		96411AEC1AC79AFA005A47B1 /* UIButton+TouchTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 96411AEA1AC79AFA005A47B1 /* UIButton+TouchTracking.m */; };
+		9652889E1A7EEC8400BAAF6B /* UIView+TouchTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 9652889C1A7EEC8400BAAF6B /* UIView+TouchTracking.h */; };
+		9652889F1A7EEC8400BAAF6B /* UIView+TouchTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 9652889D1A7EEC8400BAAF6B /* UIView+TouchTracking.m */; };
 		966F999E1A74C8F300078D01 /* UIViewController+TouchTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 966F999C1A74C8F300078D01 /* UIViewController+TouchTracking.h */; };
 		966F999F1A74C8F300078D01 /* UIViewController+TouchTracking.m in Sources */ = {isa = PBXBuildFile; fileRef = 966F999D1A74C8F300078D01 /* UIViewController+TouchTracking.m */; };
 		966F99A61A75EFC800078D01 /* UIResponder+TouchTracking.h in Headers */ = {isa = PBXBuildFile; fileRef = 966F99A41A75EFC800078D01 /* UIResponder+TouchTracking.h */; };
@@ -72,6 +76,10 @@
 		9636379E1A74530800D013B7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9636379F1A74530800D013B7 /* TouchExampleAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchExampleAppTests.m; sourceTree = "<group>"; };
 		963637A81A7453AA00D013B7 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Debug-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		96411AE91AC79AFA005A47B1 /* UIButton+TouchTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+TouchTracking.h"; sourceTree = "<group>"; };
+		96411AEA1AC79AFA005A47B1 /* UIButton+TouchTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+TouchTracking.m"; sourceTree = "<group>"; };
+		9652889C1A7EEC8400BAAF6B /* UIView+TouchTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TouchTracking.h"; sourceTree = "<group>"; };
+		9652889D1A7EEC8400BAAF6B /* UIView+TouchTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TouchTracking.m"; sourceTree = "<group>"; };
 		966F999C1A74C8F300078D01 /* UIViewController+TouchTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+TouchTracking.h"; sourceTree = "<group>"; };
 		966F999D1A74C8F300078D01 /* UIViewController+TouchTracking.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+TouchTracking.m"; sourceTree = "<group>"; };
 		966F99A41A75EFC800078D01 /* UIResponder+TouchTracking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIResponder+TouchTracking.h"; sourceTree = "<group>"; };
@@ -230,6 +238,10 @@
 				966F99A51A75EFC800078D01 /* UIResponder+TouchTracking.m */,
 				966F99A81A75F37300078D01 /* UIControl+TouchTracking.h */,
 				966F99A91A75F37300078D01 /* UIControl+TouchTracking.m */,
+				9652889C1A7EEC8400BAAF6B /* UIView+TouchTracking.h */,
+				9652889D1A7EEC8400BAAF6B /* UIView+TouchTracking.m */,
+				96411AE91AC79AFA005A47B1 /* UIButton+TouchTracking.h */,
+				96411AEA1AC79AFA005A47B1 /* UIButton+TouchTracking.m */,
 			);
 			path = Touch;
 			sourceTree = "<group>";
@@ -259,10 +271,12 @@
 			files = (
 				9695D8B819AC1C21005E62FC /* TMBackendHelper.h in Headers */,
 				96FE2E0019ABEB6B0017982B /* Touch.h in Headers */,
+				96411AEB1AC79AFA005A47B1 /* UIButton+TouchTracking.h in Headers */,
 				966F99A61A75EFC800078D01 /* UIResponder+TouchTracking.h in Headers */,
 				96FE2DFE19ABEB6B0017982B /* Touch-Prefix.pch in Headers */,
 				9695D8BC19AC1C9A005E62FC /* TMKeenBackendHelper.h in Headers */,
 				966F99AA1A75F37300078D01 /* UIControl+TouchTracking.h in Headers */,
+				9652889E1A7EEC8400BAAF6B /* UIView+TouchTracking.h in Headers */,
 				966F999E1A74C8F300078D01 /* UIViewController+TouchTracking.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -507,6 +521,8 @@
 				966F999F1A74C8F300078D01 /* UIViewController+TouchTracking.m in Sources */,
 				966F99A71A75EFC800078D01 /* UIResponder+TouchTracking.m in Sources */,
 				9695D8B919AC1C21005E62FC /* TMBackendHelper.m in Sources */,
+				96411AEC1AC79AFA005A47B1 /* UIButton+TouchTracking.m in Sources */,
+				9652889F1A7EEC8400BAAF6B /* UIView+TouchTracking.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
