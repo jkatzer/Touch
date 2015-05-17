@@ -6,7 +6,8 @@
 //  Copyright (c) 2014 Jason Katzer. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
+
 
 @interface Touch : NSObject
 
@@ -19,6 +20,9 @@
 //starting and stopping
 +(void)start;
 +(void)stop;
+
+//additional uploading options
++(void)applicationDidEnterBackground:(UIApplication*)application;
 
 //advanced features
 +(void)setInterval:(NSInteger)interval;

@@ -55,7 +55,6 @@
 
 }
 
-
 -(void)uploadEvents{
   [[KeenClient sharedClient] uploadWithFinishedBlock:nil];
 }

@@ -53,7 +53,6 @@
 +(void)start
 {
   [[Touch touchManager] startUploading];
-  [[Touch touchManager] uploadEvents];
 }
 
 +(void)stop
@@ -61,9 +60,14 @@
   [[Touch touchManager] stopUploading];
 }
 
++(void)applicationDidEnterBackground:(UIApplication*)application
+{
+  [[Touch touchManager] uploadEvents];
+}
+
 
 -(void)startUploading{
-  _uploadTimer = [NSTimer timerWithTimeInterval:1.0 target:self selector:@selector(uploadEvents) userInfo:nil repeats:YES];
+  _uploadTimer = [NSTimer scheduledTimerWithTimeInterval:60.0 target:self selector:@selector(uploadEvents) userInfo:nil repeats:YES];
 }
 
 -(void)stopUploading

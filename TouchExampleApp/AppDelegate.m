@@ -22,4 +22,10 @@
   return YES;
 }
 
+
+- (void)applicationDidEnterBackground:(UIApplication *)application
+{
+  [Touch applicationDidEnterBackground:application];
+}
+
 @end
