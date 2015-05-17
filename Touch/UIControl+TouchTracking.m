@@ -8,37 +8,15 @@
 
 #import "UIControl+TouchTracking.h"
 #import "Touch.h"
-#import <objc/runtime.h>
+#import "NSObject+TMSwizzle.h"
 
 @implementation UIControl (TouchTracking)
 +(void)load
 {
   static dispatch_once_t onceToken;
   dispatch_once(&onceToken, ^{
-    [self swizzle:@selector(sendAction:to:forEvent:) with:@selector(xxx_sendAction:to:forEvent:)];
+    [self tmswizzle:@selector(sendAction:to:forEvent:) with:@selector(xxx_sendAction:to:forEvent:)];
   });
-}
-
-+(void)swizzle:(SEL)original with:(SEL)new {
-  Class class = [self class];
-
-  Method originalMethod = class_getInstanceMethod(class, original);
-  Method swizzledMethod = class_getInstanceMethod(class, new);
-
-  BOOL didAddMethod =
-  class_addMethod(class,
-                  original,
-                  method_getImplementation(swizzledMethod),
-                  method_getTypeEncoding(swizzledMethod));
-
-  if (didAddMethod) {
-    class_replaceMethod(class,
-                        new,
-                        method_getImplementation(originalMethod),
-                        method_getTypeEncoding(originalMethod));
-  } else {
-    method_exchangeImplementations(originalMethod, swizzledMethod);
-  }
 }
 
 -(void)xxx_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
